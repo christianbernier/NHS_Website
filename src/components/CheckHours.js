@@ -9,12 +9,6 @@ export default () => {
   const [textToDisplay, setTextToDisplay] = useState("");
 
   useEffect(() => {
-    if(typeof window === "undefined" || !window.document){
-      return;
-    }
-  }, []);
-
-  useEffect(() => {
     fetch(
       "https://spreadsheets.google.com/feeds/list/1j_FlqzEWVQiIaT0LXuQHkm8uUzdrGpl_wyZZU3KEJF0/1/public/full?alt=json"
     )
@@ -41,32 +35,34 @@ export default () => {
   }, []);
 
   const generateReport = () => {
-    const firstName = document.getElementById("first_name").value;
-    const lastName = document.getElementById("last_name").value;
-    const yog = document.getElementById("yog").value;
+    if (typeof window !== "undefined" && typeof document !== "undefined") {
+      const firstName = document.getElementById("first_name").value;
+      const lastName = document.getElementById("last_name").value;
+      const yog = document.getElementById("yog").value;
 
-    if (firstName === "" || lastName === "" || yog === "") {
-      setTextToDisplay("Please make sure every field is filled out.");
-    } else {
-      for (const hour of hours) {
-        if (
-          hour.firstName === firstName &&
-          hour.lastName === lastName &&
-          hour.yog === yog
-        ) {
-          setTextToDisplay(
-            `${hour.firstName} ${hour.lastName} has completed ${
-              hour.NHSHours
-            } NHS hour${parseInt(hour.NHSHours) === 1 ? "" : "s"} and ${
-              hour.nonNHSHours
-            } non-NHS hour${
-              parseInt(hour.nonNHSHours) === 1 ? "" : "s"
-            }. That's ${hour.totalHours} total hour${
-              parseInt(hour.totalHours) === 1 ? "" : "s"
-            }, and ${hour.totalHoursCounted} total hour${
-              parseInt(hour.totalHoursCounted) === 1 ? "" : "s"
-            } counted (max of 5 non-NHS hours).`
-          );
+      if (firstName === "" || lastName === "" || yog === "") {
+        setTextToDisplay("Please make sure every field is filled out.");
+      } else {
+        for (const hour of hours) {
+          if (
+            hour.firstName === firstName &&
+            hour.lastName === lastName &&
+            hour.yog === yog
+          ) {
+            setTextToDisplay(
+              `${hour.firstName} ${hour.lastName} has completed ${
+                hour.NHSHours
+              } NHS hour${parseInt(hour.NHSHours) === 1 ? "" : "s"} and ${
+                hour.nonNHSHours
+              } non-NHS hour${
+                parseInt(hour.nonNHSHours) === 1 ? "" : "s"
+              }. That's ${hour.totalHours} total hour${
+                parseInt(hour.totalHours) === 1 ? "" : "s"
+              }, and ${hour.totalHoursCounted} total hour${
+                parseInt(hour.totalHoursCounted) === 1 ? "" : "s"
+              } counted (max of 5 non-NHS hours).`
+            );
+          }
         }
       }
     }
