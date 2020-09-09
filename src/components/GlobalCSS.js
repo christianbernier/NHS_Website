@@ -15,7 +15,7 @@ export default () => {
           property="og:site_name"
           content="National Honor Society: Lexington, MA"
         />
-        <meta property="og:title" content="MBTA Wiki" />
+        <meta property="og:title" content="National Honor Society" />
         <meta
           property="og:description"
           content="Find information about the Lexington, MA charter of the National Honor Society. View projects, learn about your officers, and more!"
