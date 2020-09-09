@@ -30,7 +30,7 @@ export default () => {
   const [pagesShown, setPagesShown] = useState(true);
   let pageText = "Hide navigation";
 
-  if (typeof window !== undefined) {
+  if (typeof window !== undefined && typeof document !== undefined) {
     if (pagesShown) {
       for (let element of document.getElementsByClassName("nav_button")) {
         element.classList.remove("hidden");
@@ -45,7 +45,7 @@ export default () => {
   }
 
   useEffect(() => {
-    if (typeof window !== undefined) {
+    if (typeof window !== undefined && typeof document !== undefined) {
       const navbar = document.getElementById("nav_bar");
       const ca = document.getElementById("content_area");
       const deviceWidth = navbar.clientWidth;

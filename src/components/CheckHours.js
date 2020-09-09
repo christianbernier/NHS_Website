@@ -35,7 +35,7 @@ export default () => {
   }, []);
 
   const generateReport = () => {
-    if (typeof window !== undefined) {
+    if (typeof window !== undefined && typeof document !== undefined) {
       const firstName = document.getElementById("first_name").value;
       const lastName = document.getElementById("last_name").value;
       const yog = document.getElementById("yog").value;
