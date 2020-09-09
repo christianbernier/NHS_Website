@@ -4,43 +4,44 @@ import Logo from "../../assets/NHS_Logo.png";
 import NavButton from "../components/NavButton.js";
 
 export default () => {
-
   const pages = [
     {
-      "title": "Home",
-      "link": "/"
+      title: "Home",
+      link: "/",
     },
     {
-      "title": "About",
-      "link": "/about"
+      title: "About",
+      link: "/about",
     },
     {
-      "title": "Apply",
-      "link": "/apply"
+      title: "Apply",
+      link: "/apply",
     },
     {
-      "title": "Projects",
-      "link": "/projects"
+      title: "Projects",
+      link: "/projects",
     },
     {
-      "title": "Hours",
-      "link": "/hours"
-    }
+      title: "Hours",
+      link: "/hours",
+    },
   ];
 
   const [pagesShown, setPagesShown] = useState(true);
   let pageText = "Hide navigation";
 
-  if(pagesShown){
-    for(let element of document.getElementsByClassName("nav_button")){
-      element.classList.remove("hidden");
+  if (document) {
+    if (pagesShown) {
+      for (let element of document.getElementsByClassName("nav_button")) {
+        element.classList.remove("hidden");
+      }
+      pageText = "Hide navigation";
+    } else {
+      for (let element of document.getElementsByClassName("nav_button")) {
+        element.classList.add("hidden");
+      }
+      pageText = "Show navigation";
     }
-    pageText = "Hide navigation";
-  } else{
-    for(let element of document.getElementsByClassName("nav_button")){
-      element.classList.add("hidden");
-    }
-    pageText = "Show navigation";
   }
 
   useEffect(() => {
@@ -50,8 +51,8 @@ export default () => {
       const deviceWidth = navbar.clientWidth;
       const sticky = navbar.offsetTop;
 
-      if(deviceWidth <= 500){
-        for(let element of document.getElementsByClassName("nav_button")){
+      if (deviceWidth <= 500) {
+        for (let element of document.getElementsByClassName("nav_button")) {
           element.classList.add("hidden");
         }
         pageText = "Show navigation";
@@ -200,11 +201,9 @@ export default () => {
             {pageText}
           </p>
         </div>
-        {
-          pages.map(p => 
-            <NavButton title={p.title} link={p.link}/>
-          )
-        }
+        {pages.map((p) => (
+          <NavButton title={p.title} link={p.link} />
+        ))}
       </div>
     </>
   );
