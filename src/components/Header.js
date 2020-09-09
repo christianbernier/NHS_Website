@@ -4,6 +4,12 @@ import Logo from "../../assets/NHS_Logo.png";
 import NavButton from "../components/NavButton.js";
 
 export default () => {
+  useEffect(() => {
+    if(typeof window === "undefined" || !window.document){
+      return;
+    }
+  }, []);
+
   const pages = [
     {
       title: "Home",
