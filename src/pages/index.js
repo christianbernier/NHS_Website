@@ -42,24 +42,28 @@ export default () => {
         <Gap height="20px"/>
         <Biography
           name="Dr. Parul Kumar"
+          email="pkumar@lexingtonma.org"
           role="Advisor"
           image={DefaultProfilePicture}
           description="[Dr. Kumar's description]"
         />
         <Biography
           name="Kyuho Lee"
+          email="21lee72@lexingtonma.org"
           role="President"
           image={KyuhoProfilePicture}
           description="Hey! I'm Kyuho and I'm the President of NHS. At NHS, I’m in charge of organizing and managing overall activities, such as events, meetings, and projects. Outside of NHS, I love to sing, play frisbee, and go to the beach. If you have any questions NHS-related, please reach out!"
         />
         <Biography
           name="Emily Zhu"
+          email="21zhu15@lexingtonma.org"
           role="Vice President of Community Service"
           image={DefaultProfilePicture}
           description="[Emily's description]"
         />
         <Biography
           name="Callie Rabins"
+          email="21rabins@lexingtonma.org"
           role="Vice President of Fundraising and Publicity"
           image={DefaultProfilePicture}
           description="[Callie's description]"
