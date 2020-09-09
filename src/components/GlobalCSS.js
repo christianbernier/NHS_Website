@@ -48,6 +48,8 @@ export default () => {
             margin: 0;
             width: 100vw;
             background-color: var(--light);
+
+            overflow-x: hidden;
           }
 
           p {
