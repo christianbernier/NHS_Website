@@ -52,7 +52,7 @@ export default () => {
           email="21lee72@lexingtonma.org"
           role="President"
           image={KyuhoProfilePicture}
-          description="Hey! I'm Kyuho and I'm the President of NHS. At NHS, I’m in charge of organizing and managing overall activities, such as events, meetings, and projects. Outside of NHS, I love to sing, play frisbee, and go to the beach. If you have any questions NHS-related, please reach out!"
+          description="Hey! I'm Kyuho and I'm the President of NHS. At NHS, I’m in charge of organizing and managing overall activities, such as events, meetings, and projects. Outside of NHS, I love to sing, play frisbee, and go to the beach. If you have any questions NHS-related questions, please reach out!"
         />
         <Biography
           name="Emily Zhu"

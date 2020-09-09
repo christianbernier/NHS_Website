@@ -43,12 +43,14 @@ export default () => {
       if (firstName === "" || lastName === "" || yog === "") {
         setTextToDisplay("Please make sure every field is filled out.");
       } else {
+        let found = false;
         for (const hour of hours) {
           if (
-            hour.firstName === firstName &&
-            hour.lastName === lastName &&
+            hour.firstName.toLowerCase() === firstName.toLowerCase() &&
+            hour.lastName.toLowerCase() === lastName.toLowerCase() &&
             hour.yog === yog
           ) {
+            found = true;
             setTextToDisplay(
               `${hour.firstName} ${hour.lastName} has completed ${
                 hour.NHSHours
@@ -63,6 +65,10 @@ export default () => {
               } counted (max of 5 non-NHS hours).`
             );
           }
+        }
+
+        if(!found){
+          setTextToDisplay("Couldn't find your record in the spreadsheet. Please try again or email an NHS officer.")
         }
       }
     }

@@ -16,6 +16,10 @@ export default ({ htmlID }) => {
         font-size: 1.2rem;
         font-weight: 400;
         color: var(--font-color);
+
+        @media only screen and (max-width: 500px) {
+          width: calc(100% - 20px);
+        }
       `}
     />
   );

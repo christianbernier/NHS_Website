@@ -4,7 +4,6 @@ import Logo from "../../assets/NHS_Logo.png";
 import NavButton from "../components/NavButton.js";
 
 export default () => {
-
   const pages = [
     {
       title: "Home",
@@ -76,89 +75,96 @@ export default () => {
 
   return (
     <>
-      <div
+      <a
+        href="/"
         css={css`
-          width: 100vw;
-          height: 120px;
-          background-color: var(--dark-blue);
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-
-          @media only screen and (max-width: 500px) {
-            flex-direction: column-reverse;
-            justify-content: center;
-            align-items: center;
-            height: 200px;
-          }
+          text-decoration: none;
         `}
       >
         <div
           css={css`
+            width: 100vw;
+            height: 120px;
+            background-color: var(--dark-blue);
             display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            padding-left: 30px;
-            height: 100%;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
 
             @media only screen and (max-width: 500px) {
+              flex-direction: column-reverse;
               justify-content: center;
               align-items: center;
-              padding-left: 0;
-              margin-left: 30px;
-              margin-right: 30px;
-              text-align: center;
+              height: 200px;
             }
           `}
         >
-          <p
+          <div
             css={css`
-              font-family: "Playfair Display", sans-serif;
-              font-size: 2rem;
-              margin: 0;
-              color: var(--light);
-              font-weight: 700;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              padding-left: 30px;
+              height: 100%;
 
               @media only screen and (max-width: 500px) {
-                font-size: 1.6rem;
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                margin-left: 30px;
+                margin-right: 30px;
+                text-align: center;
               }
             `}
           >
-            National Honor Society
-          </p>
-          <p
+            <p
+              css={css`
+                font-family: "Playfair Display", sans-serif;
+                font-size: 2rem;
+                margin: 0;
+                color: var(--light);
+                font-weight: 700;
+
+                @media only screen and (max-width: 500px) {
+                  font-size: 1.6rem;
+                }
+              `}
+            >
+              National Honor Society
+            </p>
+            <p
+              css={css`
+                font-family: "Playfair Display SC", sans-serif;
+                font-size: 1rem;
+                margin: 0;
+                color: var(--light);
+                font-weight: 700;
+                margin-top: -20px;
+
+                @media only screen and (max-width: 500px) {
+                  margin-top: 8px;
+                  margin-bottom: 30px;
+                }
+              `}
+            >
+              Lexington, MA
+            </p>
+          </div>
+          <img
+            src={Logo}
             css={css`
-              font-family: "Playfair Display SC", sans-serif;
-              font-size: 1rem;
-              margin: 0;
-              color: var(--light);
-              font-weight: 700;
-              margin-top: -20px;
+              height: 80px;
+              margin-right: 30px;
 
               @media only screen and (max-width: 500px) {
-                margin-top: 8px;
-                margin-bottom: 30px;
+                margin-right: 0;
+                margin-top: 30px;
               }
             `}
-          >
-            Lexington, MA
-          </p>
+            alt="National Honor Society logo"
+          />
         </div>
-        <img
-          src={Logo}
-          css={css`
-            height: 80px;
-            margin-right: 30px;
-
-            @media only screen and (max-width: 500px) {
-              margin-right: 0;
-              margin-top: 30px;
-            }
-          `}
-          alt="National Honor Society logo"
-        />
-      </div>
+      </a>
       <div
         id="nav_bar"
         css={css`
