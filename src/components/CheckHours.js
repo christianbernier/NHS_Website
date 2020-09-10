@@ -62,7 +62,7 @@ export default () => {
                 parseInt(hour.totalHours) === 1 ? "" : "s"
               }, and ${hour.totalHoursCounted} total hour${
                 parseInt(hour.totalHoursCounted) === 1 ? "" : "s"
-              } counted (max of 5 non-NHS hours).`
+              } counted (max of 5 non-NHS hours for juniors and max of 10 non-NHS hours for seniors).`
             );
           }
         }

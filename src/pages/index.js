@@ -10,9 +10,11 @@ import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
 
 import HeaderImageHome from "../../assets/headers/home.jpg";
-
 import DefaultProfilePicture from "../../assets/profiles/Default.png";
+
+import KumarProfilePicture from "../../assets/profiles/Kumar.jpg";
 import KyuhoProfilePicture from "../../assets/profiles/Kyuho.jpeg";
+import EmilyProfilePicture from "../../assets/profiles/Emily.jpg";
 import CallieProfilePicture from "../../assets/profiles/Callie.jpg";
 import ChristianProfilePicture from "../../assets/profiles/Christian.jpg";
 
@@ -30,14 +32,14 @@ export default () => {
         />
         <PopArea
           header="COVID-19 Hours Update"
-          body="Due to the pandemic, all hours (regardless of whether the project is recognized by NHS) will count towards the 20 required hours for NHS. There will be no special requirement for 15 NHS hours. Please ask any leader if you have a question."
+          body="Due to the pandemic, all hours for the 2019-2020 year (ending September 15th) will count towards the 20 required hours for NHS. There will be no special requirement for 15 NHS hours. Please ask any leader if you have a question."
         />
         <BodyHeader text="Leadership" line={true} />
         <BodyText
           paragraphs={[
             "The National Honor Society is run by your student officers Kyuho Lee, Emily Zhu, Callie Rabins, and Christian Bernier. This charter is also overseen by Dr. Parul Kumar.",
             "Your leaders are responsible for keeping members informed of upcoming deadlines, projects, and events. If you have any questions about NHS, please email any of your officers and we will help.",
-            "Please see below for more information on each leader."
+            "Please see below for more information on each leader. Click on any leader's biography to send them an email."
           ]}
         />
         <Gap height="20px"/>
@@ -45,8 +47,8 @@ export default () => {
           name="Dr. Parul Kumar"
           email="pkumar@lexingtonma.org"
           role="Advisor"
-          image={DefaultProfilePicture}
-          description="[Dr. Kumar's description]"
+          image={KumarProfilePicture}
+          description="Hello everyone, I am Parul Kumar and I teach AP Chemistry. I have been the advisor for the National Honor Society since 2003. I live with my husband, and I have two grown children. My hobbies include traveling, painting, acting, and cooking! I am here to help all of you seek and participate in community service activities and build character. I am honored and excited to work with all of you. I am looking forward to having a great year together!"
         />
         <Biography
           name="Kyuho Lee"
@@ -59,8 +61,8 @@ export default () => {
           name="Emily Zhu"
           email="21zhu15@lexingtonma.org"
           role="Vice President of Community Service"
-          image={DefaultProfilePicture}
-          description="[Emily's description]"
+          image={EmilyProfilePicture}
+          description="I cannot wait to be a part of the NHS officer team this year! Growing up in admiration of my camp CITs and Estafest face-painters, I have watched firsthand how service projects in Lexington shape community-wide experiences. I strive to use my role in NHS to help strengthen a platform for LHS students to take part in the community service as well. As a team, we work to find or create projects and events that are not only engaging but also proactively benefit others, and are always open to accepting new project ideas! This year, COVID-19 will definitely be a challenge to keep in mind when designing the opportunities, but we will make an effort to to not let physical distancing get in the way of being socially connected. Aside from NHS, I enjoy painting, playing with my dog, and finding new restaurants to try out (always looking for recommendations)!"
         />
         <Biography
           name="Callie Rabins"
@@ -74,7 +76,7 @@ export default () => {
           email="21bernier3@lexingtonma.org"
           role="Vice President of Web Administration"
           image={ChristianProfilePicture}
-          description="Hi! My name is Christian and I'm the Vice President of Web Administration. I'm a senior here at LHS and enjoy programming and playing with my two cats, Buttons and Mittens, in my free time. At NHS, I work to keep the website up and running and make improvements periodically. I also do some of the behind-the-scenes stuff like managing which projects are displayed on the website, tracking hours, and other tasks. Additionally, I work with the other officers and Dr. Kumar on planning events and making sure there are no issues. If you ever have any questions or see any issues with the website, feel free to send me an email!"
+          description="Hi! My name is Christian and I'm the Vice President of Web Administration. At NHS, I work to keep the website up and running and make improvements periodically. I also do some of the behind-the-scenes stuff like managing which projects are displayed on the website, tracking hours, and other tasks. Additionally, I work with the other officers and Dr. Kumar on planning events and making sure there are no issues. Outside of school, I enjoy programming and playing with my two cats, Buttons and Mittens. If you ever have any questions or see any issues with the website, feel free to send me an email!"
         />
         <Gap height="50px"/>
         <Footer/>
