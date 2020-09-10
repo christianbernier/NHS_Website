@@ -8,14 +8,13 @@ export default ({ name, email, role, description, image }) => {
         width: 100vw;
         max-width: 1700px;
         margin-left: 30px;
-        margin-top: 20px;
+        margin-top: 70px;
         display: grid;
         grid-template-areas:
           "image name"
           "image description";
         grid-template-rows: 40px auto;
         grid-template-columns: 15% calc(85% - 80px);
-        cursor: pointer;
 
         @media only screen and (min-width: 1700px) {
           padding: 0 calc((100vw - 1700px) / 2);
@@ -31,7 +30,6 @@ export default ({ name, email, role, description, image }) => {
           grid-template-rows: auto auto auto;
         }
       `}
-      onClick={() => window.location = (email) ? `mailto:${email}` : "/"}
     >
       <img
         src={image}
@@ -85,6 +83,7 @@ export default ({ name, email, role, description, image }) => {
         css={css`
           grid-area: description;
           margin-left: 20px;
+            text-align: left;
 
           @media only screen and (max-width: 500px) {
             margin-right: 0;
@@ -94,6 +93,20 @@ export default ({ name, email, role, description, image }) => {
           }
         `}
       >
+        <a
+          css={css`
+            font-size: 1rem;
+            color: var(--font-color);
+            font-family: "Inter", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            margin-bottom: 10px;
+            text-decoration: none;
+          `}
+          href={`mailto:${email}`}
+        >
+          {email}
+        </a>
         <p
           css={css`
             font-size: 1.2rem;

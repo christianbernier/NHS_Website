@@ -48,6 +48,7 @@ export default () => {
             margin: 0;
             width: 100vw;
             background-color: var(--light);
+            line-height: 1.5;
 
             overflow-x: hidden;
           }

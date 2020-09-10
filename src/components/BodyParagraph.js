@@ -11,7 +11,7 @@ export default ({ text }) => {
         font-weight: 400;
         margin-left: 30px;
         margin-right: 50px;
-        margin-bottom: 15px;
+        margin-bottom: 30px;
 
         @media only screen and (min-width: 1700px) {
           padding: 0 calc((100vw - 1700px) / 2);

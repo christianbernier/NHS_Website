@@ -15,7 +15,6 @@ export default () => {
       .then((data) => data.json())
       .then((data) => {
         let currentHours = JSON.parse(JSON.stringify(hours));
-        console.log(data.feed.entry);
         for (const entry of data.feed.entry) {
           if (entry["gsx$firstname"]["$t"] !== "") {
             currentHours.push({
@@ -29,7 +28,6 @@ export default () => {
             });
           }
         }
-        console.log(currentHours);
         setHours(currentHours);
       });
   }, []);

@@ -39,10 +39,9 @@ export default () => {
           paragraphs={[
             "The National Honor Society is run by your student officers Kyuho Lee, Emily Zhu, Callie Rabins, and Christian Bernier. This charter is also overseen by Dr. Parul Kumar.",
             "Your leaders are responsible for keeping members informed of upcoming deadlines, projects, and events. If you have any questions about NHS, please email any of your officers and we will help.",
-            "Please see below for more information on each leader. Click on any leader's biography to send them an email."
+            "Please see below for more information on each leader."
           ]}
         />
-        <Gap height="20px"/>
         <Biography
           name="Dr. Parul Kumar"
           email="pkumar@lexingtonma.org"

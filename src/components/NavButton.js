@@ -1,9 +1,10 @@
 import React from "react";
+import {Link} from "gatsby";
 import {css} from "@emotion/core";
 
 export default ({title, link}) => {
   return(
-    <a
+    <Link
       className="nav_button"
       css={css`
         height: 100%;
@@ -15,7 +16,7 @@ export default ({title, link}) => {
           
         }
       `}
-      href={link}
+      to={link}
     >
       <p
         css={css`
@@ -34,6 +35,6 @@ export default ({title, link}) => {
       >
         {title}
       </p>
-    </a>
+    </Link>
   )
 }

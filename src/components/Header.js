@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import {Link} from "gatsby";
 import { css } from "@emotion/core";
 import Logo from "../../assets/NHS_Logo.png";
 import NavButton from "../components/NavButton.js";
@@ -52,11 +53,11 @@ export default () => {
       const sticky = navbar.offsetTop;
 
       if (deviceWidth <= 500) {
+        setPagesShown(false);
         for (let element of document.getElementsByClassName("nav_button")) {
           element.classList.add("hidden");
         }
         pageText = "Show navigation";
-        setPagesShown(false);
       }
 
       window.onscroll = () => {
@@ -75,8 +76,8 @@ export default () => {
 
   return (
     <>
-      <a
-        href="/"
+      <Link
+        to="/"
         css={css`
           text-decoration: none;
         `}
@@ -164,7 +165,7 @@ export default () => {
             alt="National Honor Society logo"
           />
         </div>
-      </a>
+      </Link>
       <div
         id="nav_bar"
         css={css`

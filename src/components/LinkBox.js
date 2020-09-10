@@ -15,7 +15,7 @@ export default ({ text, link }) => {
           width: calc(100vw - 40px);
           padding: 15px;
           display: flex;
-          align-items: center;
+          align-items: flex-start;
           justify-content: center;
         `}
       >

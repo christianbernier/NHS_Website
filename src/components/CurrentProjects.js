@@ -11,7 +11,6 @@ export default () => {
       .then((data) => data.json())
       .then((data) => {
         let currentProjects = JSON.parse(JSON.stringify(projects));
-        console.log(data.feed.entry);
         for (const entry of data.feed.entry) {
           currentProjects.push({
             title: entry["gsx$name"]["$t"],
