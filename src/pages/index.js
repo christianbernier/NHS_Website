@@ -13,6 +13,7 @@ import HeaderImageHome from "../../assets/headers/home.jpg";
 
 import DefaultProfilePicture from "../../assets/profiles/Default.png";
 import KyuhoProfilePicture from "../../assets/profiles/Kyuho.jpeg";
+import CallieProfilePicture from "../../assets/profiles/Callie.jpg";
 import ChristianProfilePicture from "../../assets/profiles/Christian.jpg";
 
 export default () => {
@@ -65,8 +66,8 @@ export default () => {
           name="Callie Rabins"
           email="21rabins@lexingtonma.org"
           role="Vice President of Fundraising and Publicity"
-          image={DefaultProfilePicture}
-          description="[Callie's description]"
+          image={CallieProfilePicture}
+          description="Hi fellow NHS members! My name is Callie and I am your Vice President of Fundraising and Publicity. It is my job to make sure that we have all of the funding we need secured, and that our awesome events are well publicized and attended. Please do not hesitate to contact me via email if you have any questions about my role or anything else NHS related :). Outside of the classroom I am involved with Bee Club and dance (I am definitely hoping to see some dancers at our talent show this year!)"
         />
         <Biography
           name="Christian Bernier"
