@@ -29,7 +29,7 @@ export default () => {
         />
         <BodyText
           paragraphs={[
-            "Every NHS member is required to complete 20 hours of community service to retain their membership. These 20 hours must include at least 15 NHS-approved hours, which can only be obtained through NHS projects.",
+            "Every NHS member is required to complete 20 hours of community service to retain their membership. These 20 hours must include at least 15 NHS-approved hours for juniors and 10 NHS-approved hours for seniors, which can only be obtained through NHS projects.",
             "In order to accumulate NHS hours, choose a project from the projects list. Once you have completed the project, submit the form below to log your hours to the members list. Please note: hours may take up to a couple days to be approved."
           ]}
         />
