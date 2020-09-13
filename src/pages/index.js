@@ -61,7 +61,7 @@ export default () => {
           email="21zhu15@lexingtonma.org"
           role="Vice President of Community Service"
           image={EmilyProfilePicture}
-          description="I cannot wait to be a part of the NHS officer team this year! Growing up in admiration of my camp CITs and Estafest face-painters, I have watched firsthand how service projects in Lexington shape community-wide experiences. I strive to use my role in NHS to help strengthen a platform for LHS students to take part in the community service as well. As a team, we work to find or create projects and events that are not only engaging but also proactively benefit others, and are always open to accepting new project ideas! This year, COVID-19 will definitely be a challenge to keep in mind when designing the opportunities, but we will make an effort to to not let physical distancing get in the way of being socially connected. Aside from NHS, I enjoy painting, playing with my dog, and finding new restaurants to try out (always looking for recommendations)!"
+          description="I cannot wait to be a part of the NHS officer team this year! I strive to use my role to find and create projects that are not only engaging but also proactively benefit others, and am always open to accepting new project ideas! This year, COVID-19 will definitely be a challenge to keep in mind when designing the events, but we will make an effort to to not let physical distancing get in the way of being  connected. Aside from NHS, I enjoy painting, playing with my dog, and finding new restaurants to try out (always looking for recommendations)!"
         />
         <Biography
           name="Callie Rabins"
