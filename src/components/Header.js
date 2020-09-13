@@ -210,7 +210,7 @@ export default () => {
           </p>
         </div>
         {pages.map((p) => (
-          <NavButton title={p.title} link={p.link} />
+          <NavButton title={p.title} link={p.link} key={`header-${p.title}`}/>
         ))}
       </div>
     </>

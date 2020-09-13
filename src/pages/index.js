@@ -10,7 +10,7 @@ import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
 
 import HeaderImageHome from "../../assets/headers/home.jpg";
-import DefaultProfilePicture from "../../assets/profiles/Default.png";
+// import DefaultProfilePicture from "../../assets/profiles/Default.png";
 
 import KumarProfilePicture from "../../assets/profiles/Kumar.jpg";
 import KyuhoProfilePicture from "../../assets/profiles/Kyuho.jpeg";

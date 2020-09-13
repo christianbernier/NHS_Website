@@ -37,6 +37,7 @@ export default ({ text, link }) => {
               height: 20px;
               margin-right: 10px;
             `}
+            alt="Link icon"
           />
           <p
             css={css`

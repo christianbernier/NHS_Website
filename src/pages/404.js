@@ -1,13 +1,8 @@
 import React from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";
-import BleedPictureHeader from "../components/BleedPictureHeader";
 import BodyHeader from "../components/BodyHeader";
 import BodyText from "../components/BodyText";
-import Gap from "../components/Gap.js";
-import Footer from "../components/Footer.js";
-
-import HeaderImageAbout from "../../assets/headers/about.jpg";
 
 export default () => {
   return (
