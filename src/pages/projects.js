@@ -36,13 +36,13 @@ export default () => {
         <Gap height="20px"/>
         <BodyText
           paragraphs={[
-            "NHS also works with the Learning Center (room 712) to offer academic help for students. If you would like more information, please email Ms. Solomon (vsolomon@lexingtonma.org).",
-            "If you would like to be a peer tutor (and earn NHS hours), please fill out the form below."
+            "NHS also works with the Learning Center (room 712) to offer academic help for students. Click the link below to learn more."
           ]}
         />
         <LinkBox
-          text="Become a peer tutor"
-          link="https://docs.google.com/forms/d/e/1FAIpQLSfSDGLjagSbPqyzptK6c7mb3pgihBWOuD3RvIO8Ty-bCfXSIA/viewform"
+          text="Learn more about peer tutoring"
+          type="internal"
+          link="peer-tutoring"
         />
         <Gap height="20px"/>
         <BodyText

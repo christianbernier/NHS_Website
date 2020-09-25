@@ -39,8 +39,8 @@ export default () => {
         />
         <Gap height="20px"/>
         <PopArea
-          header="Upcoming deadline"
-          body="The 2019-2020 NHS year will end on September 15th. Please make sure you have completed your 20 hours of community service before then. If you have any questions or concerns, please email an NHS officer."
+          header="Note for Seniors"
+          body="The 2020-2021 NHS year has begun, so hours for this year have been reset. If you did not meet the hour requirement last year (20 total hours), contact an NHS officer immedietely. Students with more than 20 hours completed last year will see that extra hours have rolled over into this year."
         />
         <Gap height="20px"/>
         <BodyHeader

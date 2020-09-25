@@ -31,8 +31,8 @@ export default () => {
           height="500px"
         />
         <PopArea
-          header="COVID-19 Hours Update"
-          body="Due to the pandemic, all hours for the 2019-2020 year (ending September 15th) will count towards the 20 required hours for NHS. There will be no special requirement for 15 NHS hours. Please ask any leader if you have a question."
+          header="Hours Update"
+          body="The 2020-2021 NHS year has begun! All NHS members must acquire at least 20 hours of community service to retain their status in the society. A portion of these hours (15 for juniors; 10 for seniors) must be completed with NHS projects. The remaining may be completed through non-NHS projects. If you have any questions, please contact an NHS officer."
         />
         <BodyHeader text="Leadership" line={true} />
         <BodyText
