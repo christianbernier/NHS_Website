@@ -28,6 +28,7 @@ export default () => {
         <BodyText
           paragraphs={[
             "This year, the Learning Center (room 712) is offering students peer tutoring remotely. NHS members can volunteer to be a peer tutor, helping students with school work, for NHS hours.",
+            "Zoom links for each block's tutoring session will be posted outside the Learning Center (room 712). Additionally, students may email Ms. Solomon at vsolomon@lexingtonma.org for links, but please make sure to email in advance of the block you wish to attend.",
             "If you have any questions about the program, please email Ms. Solomon (vsolomon@lexingtonma.org). Those looking to sign up to be a peer mentor may use the form linked below."
           ]}
         />
