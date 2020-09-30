@@ -33,8 +33,8 @@ export default () => {
           ]}
         />
         <LinkBox
-          text="NHS application form"
-          link="https://docs.google.com/document/d/1JvOsBVTWdaUptr6nLFeYUtTWGkVYIdKf3Yl0R3S3Tk8/edit?usp=sharing"
+          text="Sign up to be a peer tutor"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSfSDGLjagSbPqyzptK6c7mb3pgihBWOuD3RvIO8Ty-bCfXSIA/viewform?usp=sf_link"
         />
         <Gap height="200px"/>
         <Footer/>
