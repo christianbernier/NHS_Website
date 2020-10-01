@@ -36,7 +36,17 @@ export default () => {
         <Gap height="20px"/>
         <BodyText
           paragraphs={[
-            "NHS also works with the Learning Center (room 712) to offer academic help for students. Click the link below to learn more."
+            "If you would like to add a project, please fill out the form below and you will be informed if the project is approved or denied. Please note: the approval of new projects and project hours may take up to one week."
+          ]}
+        />
+        <LinkBox
+          text="Submit a new project"
+          link="https://docs.google.com/forms/d/e/1FAIpQLSezlVfSCwjh29Yx6E4fxyoO3UF8dF45uTbtTZbNTjCbJoYQLw/viewform"
+        />
+        <BodyHeader text="Peer tutoring" line={true}/>
+        <BodyText
+          paragraphs={[
+            "The Learning Center (room 712) offers LHS students tutoring services. If you are interested in receiving tutoring, would like to be a peer tutor, or want to learn more, please click below. If you have any questions, please do not hesitate to ask Ms. Solomon (vsolomon@lexingtonma.org)."
           ]}
         />
         <LinkBox
@@ -44,17 +54,7 @@ export default () => {
           type="internal"
           link="peer-tutoring"
         />
-        <Gap height="20px"/>
-        <BodyText
-          paragraphs={[
-            "If you would like to add a project, please fill out the form below and you will be informed if the project is approved or denied.",
-            "Please note: the approval of new projects and project hours may take up to one week.",
-          ]}
-        />
-        <LinkBox
-          text="Submit a new project"
-          link="https://docs.google.com/forms/d/e/1FAIpQLSezlVfSCwjh29Yx6E4fxyoO3UF8dF45uTbtTZbNTjCbJoYQLw/viewform"
-        />
+        
 
         <Gap height="20px" />
         <BodyHeader text="Current projects" line={true} />
