@@ -40,7 +40,7 @@ export default () => {
         <Gap height="20px"/>
         <PopArea
           header="Note for Seniors"
-          body="The 2020-2021 NHS year has begun, so hours for this year have been reset. If you did not meet the hour requirement last year (20 total hours), contact an NHS officer immedietely. Students with more than 20 hours completed last year will see that extra hours have rolled over into this year."
+          body="The 2020-2021 NHS year has begun, so hours for this year have been reset. If you did not meet the hour requirement last year (20 total hours), contact an NHS officer immediately. Students with more than 20 hours completed last year will see that extra hours have rolled over into this year."
         />
         <Gap height="20px"/>
         <BodyHeader
