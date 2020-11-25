@@ -43,7 +43,7 @@ export default () => {
           text="Submit a new project"
           link="https://docs.google.com/forms/d/e/1FAIpQLSezlVfSCwjh29Yx6E4fxyoO3UF8dF45uTbtTZbNTjCbJoYQLw/viewform"
         />
-        <BodyHeader text="Peer tutoring" line={true}/>
+        <BodyHeader text="NHS special projects" line={true}/>
         <BodyText
           paragraphs={[
             "The Learning Center (room 712) offers LHS students tutoring services. If you are interested in receiving tutoring, would like to be a peer tutor, or want to learn more, please click below. If you have any questions, please do not hesitate to ask Ms. Solomon (vsolomon@lexingtonma.org)."
@@ -53,6 +53,15 @@ export default () => {
           text="Learn more about peer tutoring"
           type="internal"
           link="peer-tutoring"
+        />
+        <BodyText
+          paragraphs={[
+            "We are offering a college essay peer-editing exchange program for NHS members this year. If you are interested, more details may be found on the form below. If you have any questions, please email Callie Rabins (21rabins@lexingtonma.org)."
+          ]}
+        />
+        <LinkBox
+          text="Sign up for essay exchange"
+          link="https://forms.gle/LaJdYWo6Z4ntuJTX7"
         />
         
 

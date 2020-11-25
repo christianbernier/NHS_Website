@@ -31,8 +31,8 @@ export default () => {
           height="500px"
         />
         <PopArea
-          header="Hours Update"
-          body="The 2020-2021 NHS year has begun! All NHS members must acquire at least 20 hours of community service to retain their status in the society. A portion of these hours (15 for juniors; 10 for seniors) must be completed with NHS projects. The remaining may be completed through non-NHS projects. If you have any questions, please contact an NHS officer."
+          header="Attention NHS Juniors"
+          body="Welcome to NHS! We look forward to seeing all the community service you will complete during your time in NHS and we look forward to working with you. Please be on the lookout for an email about the mandatory new member meeting in early December. If you ever have any questions, please do not hesistate to contact anyone below. Thanks and welcome!"
         />
         <BodyHeader text="Leadership" line={true} />
         <BodyText
