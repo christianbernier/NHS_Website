@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
+import TextWithLinks from "../components/TextWithLinks";
 
 export default () => {
   const [projects, setProjects] = useState([]);
@@ -122,16 +123,9 @@ export default () => {
                 {p.time}
               </p>
             </div>
-            <p
-              css={css`
-                font-family: "Inter", sans-serif;
-                font-size: 1.2rem;
-                font-weight: 400;
-                margin-top: 15px;
-              `}
-            >
-              {p.description}
-            </p>
+            <TextWithLinks
+              text={p.description}
+            />
             <p
               css={css`
                 font-family: "Inter", sans-serif;
