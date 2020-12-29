@@ -14,7 +14,10 @@ export default () => {
         for (const entry of data.feed.entry) {
           currentProjects.push({
             title: entry["gsx$name"]["$t"],
+            id: entry["gsx$id"]["$t"],
+            display: entry["gsx$display"]["$t"],
             time: entry["gsx$dateortime"]["$t"],
+            expires: entry["gsx$expires"]["$t"],
             description: entry["gsx$description"]["$t"],
             coordinator_name: entry["gsx$coordinatorfullname"]["$t"],
             coordinator_email: entry["gsx$coordinatoremail"]["$t"],
@@ -60,6 +63,13 @@ export default () => {
         <></>
       )}
       {projects.map((p) => {
+
+        const expiresOn = new Date(p.expires);
+        const now = new Date();
+        if((expiresOn - now) < 0 || p.display !== "TRUE"){
+          return;
+        }
+
         return (
           <div
             css={css`
@@ -76,6 +86,7 @@ export default () => {
               flex-direction: column;
               align-items: flex-start;
             `}
+            key={p.id}
           >
             <div
               css={css`
