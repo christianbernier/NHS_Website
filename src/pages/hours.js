@@ -39,8 +39,8 @@ export default () => {
         />
         <Gap height="20px"/>
         <PopArea
-          header="Welcome Juniors!"
-          body="Below is a helpful form that you may use at anytime to check your status in NHS. We highly recommend staying up-to-date on your hours throughout the year. Please let us know if you have any issues or questions."
+          header="Hours Reminder"
+          body="With the school year half over, please make sure you're on-schedule for completing your hours by this spring. If you have any concerns about your hours, please contact any officer ASAP. Thank you!"
         />
         <Gap height="20px"/>
         <BodyHeader

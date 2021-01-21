@@ -34,6 +34,7 @@ export default () => {
           text="NHS application form"
           link="https://docs.google.com/document/d/1JvOsBVTWdaUptr6nLFeYUtTWGkVYIdKf3Yl0R3S3Tk8/edit?usp=sharing"
         />
+        <Gap height="20px"/>
         <BodyText
           paragraphs={[
             "To finish your application, the full application must be printed, filled out, and turned in to room 401 along with a typed letter from you to the Faculty Council. Please note: 2020-2021 year applications have been completed. If you believe there has been a mistake, contact a leader ASAP.",

@@ -120,7 +120,7 @@ export default () => {
           >
             <p
               css={css`
-                font-family: "Playfair Display", sans-serif;
+                font-family: "Playfair Display", serif;
                 font-size: 2rem;
                 margin: 0;
                 color: var(--light);
@@ -135,7 +135,7 @@ export default () => {
             </p>
             <p
               css={css`
-                font-family: "Playfair Display SC", sans-serif;
+                font-family: "Playfair Display SC", serif;
                 font-size: 1rem;
                 margin: 0;
                 color: var(--light);

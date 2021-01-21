@@ -37,6 +37,7 @@ export default ({ name, email, role, description, image }) => {
         css={css`
           width: 100%;
           grid-area: image;
+          border-radius: 5px;
         `}
       />
       <div

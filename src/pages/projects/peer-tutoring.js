@@ -33,7 +33,7 @@ export default () => {
           ]}
         />
         <BodyHeader
-          text="Tutoring schedule"
+          text="After school tutoring schedule"
           line={true}
         />
         <BodyText

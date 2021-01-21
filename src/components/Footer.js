@@ -28,7 +28,7 @@ export default () => {
           font-weight: 400;
         `}
       >
-        Copyright 2020 to the Lexington High School National Honor Society.
+        © Copyright 2020–2021 to the Lexington High School National Honor Society.
       </p>
     </div>
   );
