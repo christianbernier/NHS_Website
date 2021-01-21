@@ -50,7 +50,7 @@ export default () => {
           ]}
         />
         <LinkBox
-          text="Learn about NHS Council"
+          text="Learn about the NHS Council"
           type="internal"
           link="../council"
         />
