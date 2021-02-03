@@ -2,9 +2,12 @@ import React from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";
 import BodyHeader from "../components/BodyHeader";
+import BleedPictureHeader from "../components/BleedPictureHeader";
 import BodyText from "../components/BodyText";
 import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
+
+import HeaderImageCouncil from "../../assets/headers/council.png";
 
 export default () => {
   return (
@@ -12,7 +15,11 @@ export default () => {
       <GlobalCSS />
       <Header />
       <div id="content_area">
-        <Gap height="30px"/>
+      <BleedPictureHeader
+          imgsrc={HeaderImageCouncil}
+          header="NHS Council"
+          height="500px"
+        />
         <BodyHeader
           text="About the NHS Council"
           line={true}
