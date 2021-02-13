@@ -17,6 +17,7 @@ export default () => {
       <GlobalCSS />
       <Helmet>
         <title>Peer Tutoring | NHS</title>
+        <meta property="og:title" content="Peer Tutoring | NHS" />
       </Helmet>
       <Header />
       <div id="content_area">

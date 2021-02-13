@@ -158,6 +158,7 @@ export default () => {
       <GlobalCSS />
       <Helmet>
         <title>{eventDetails.title + " | NHS"}</title>
+        <meta property="og:title" content={eventDetails.title + " | NHS"} />
       </Helmet>
       <Header />
       <div id="content_area">

@@ -11,6 +11,7 @@ export default () => {
       <GlobalCSS />
       <Helmet>
         <title>404 | NHS</title>
+        <meta property="og:title" content="404 | NHS" />
       </Helmet>
       <Header />
       <div id="content_area">

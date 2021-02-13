@@ -15,6 +15,7 @@ export default () => {
       <GlobalCSS />
       <Helmet>
         <title>Calendar | NHS</title>
+        <meta property="og:title" content="Calendar | NHS" />
       </Helmet>
       <Header />
       <div id="content_area">
