@@ -594,6 +594,7 @@ export default () => {
                     background-color: var(--light-blue);
                     padding: 10px 5px;
                     border-radius: 5px;
+                    margin-bottom: 20px;
                   `}
                 >
                   <p
