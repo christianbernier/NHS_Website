@@ -6,6 +6,7 @@ import BleedPictureHeader from "../components/BleedPictureHeader";
 import BodyText from "../components/BodyText";
 import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
+import { Helmet } from "react-helmet-async";
 
 import HeaderImageCouncil from "../../assets/headers/council.png";
 
@@ -13,6 +14,9 @@ export default () => {
   return (
     <>
       <GlobalCSS />
+      <Helmet>
+        <title>Council | NHS</title>
+      </Helmet>
       <Header />
       <div id="content_area">
       <BleedPictureHeader

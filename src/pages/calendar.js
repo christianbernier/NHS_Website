@@ -3,6 +3,10 @@ import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";
 import BodyHeader from "../components/BodyHeader";
 import BodyText from "../components/BodyText";
+import Gap from "../components/Gap.js";
+import Footer from "../components/Footer.js";
+import Calendar from "../components/Calendar.js";
+
 import { Helmet } from "react-helmet-async";
 
 export default () => {
@@ -10,20 +14,24 @@ export default () => {
     <>
       <GlobalCSS />
       <Helmet>
-        <title>404 | NHS</title>
+        <title>Calendar | NHS</title>
       </Helmet>
       <Header />
       <div id="content_area">
+        <Gap height="30px"/>
         <BodyHeader
-          text="Error 404 — Page not found"
+          text="NHS Calendar"
           line={true}
         />
         <BodyText
           paragraphs={[
-            "The page you were looking for could not be found.",
-            "Please try again or contact Christian Bernier (21bernier3@lexingtonma.org) if you believe this is an error."
+            "Please check out the calendar below to see upcoming NHS events. If you believe something is missing, please contact Christian at 21bernier3@lexingtonma.org."
           ]}
         />
+        <Gap height="30px"/>
+        <Calendar/>
+        <Gap height="100px"/>
+        <Footer/>
       </div>
     </>
   );

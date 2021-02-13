@@ -9,6 +9,7 @@ import LinkBox from "../components/LinkBox";
 import Gap from "../components/Gap.js";
 import CheckHours from "../components/CheckHours.js";
 import Footer from "../components/Footer.js";
+import { Helmet } from "react-helmet-async";
 
 import HeaderImageHours from "../../assets/headers/hours.jpg";
 
@@ -16,6 +17,9 @@ export default () => {
   return (
     <>
       <GlobalCSS />
+      <Helmet>
+        <title>Hours | NHS</title>
+      </Helmet>
       <Header />
       <div id="content_area">
         <BleedPictureHeader

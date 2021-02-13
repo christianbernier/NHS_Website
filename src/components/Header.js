@@ -26,6 +26,10 @@ export default () => {
       title: "Hours",
       link: "/hours",
     },
+    {
+      title: "Calendar",
+      link: "/calendar",
+    },
   ];
 
   const [pagesShown, setPagesShown] = useState(true);

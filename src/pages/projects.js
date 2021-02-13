@@ -8,6 +8,7 @@ import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
 import CurrentProjects from "../components/CurrentProjects.js";
 import LinkBox from "../components/LinkBox.js";
+import { Helmet } from "react-helmet-async";
 
 import HeaderImageProjects from "../../assets/headers/projects.jpg";
 
@@ -15,6 +16,9 @@ export default () => {
   return (
     <>
       <GlobalCSS />
+      <Helmet>
+        <title>Projects | NHS</title>
+      </Helmet>
       <Header />
       <div id="content_area">
         <BleedPictureHeader

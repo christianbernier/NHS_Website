@@ -7,6 +7,7 @@ import BodyText from "../components/BodyText";
 import LinkBox from "../components/LinkBox";
 import Gap from "../components/Gap.js";
 import Footer from "../components/Footer.js";
+import { Helmet } from "react-helmet-async";
 
 import HeaderImageApply from "../../assets/headers/apply.png";
 
@@ -14,6 +15,9 @@ export default () => {
   return (
     <>
       <GlobalCSS />
+      <Helmet>
+        <title>Apply | NHS</title>
+      </Helmet>
       <Header />
       <div id="content_area">
         <BleedPictureHeader
