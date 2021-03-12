@@ -1,6 +1,20 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * NavButton.js — A button on the navigation bar for certain pages
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-20
+ */
+
 import React from "react";
 import {Link} from "gatsby";
 import {css} from "@emotion/core";
+
+/*
+ * title (string) - The title of the page for the button
+ * link (string) - The URL of the page to be directed to
+ */
 
 export default ({title, link}) => {
   return(

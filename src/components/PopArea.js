@@ -1,5 +1,19 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * PopArea.js — A full-width div to emphasize announcements
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * header (string) - The text to be displayed in bold in the center
+ * body (string) - The body text below the header
+ */
 
 export default ({ header, body }) => {
   return (

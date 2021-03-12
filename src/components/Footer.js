@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * Footer.js — The footer of the site, including copyright information
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
 

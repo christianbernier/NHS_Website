@@ -1,5 +1,19 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * Button.js — Creates a stylized button with text and custom click action
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-09-08
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * text (string) - The text to be displayed on the button
+ * onPress (function) - What should happen when the button is pressed
+ */
 
 export default ({ text, onPress }) => {
   return (

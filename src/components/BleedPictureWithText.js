@@ -1,5 +1,21 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * BleedPictureWithText.js — Used on most pages under the header as a page title (with an image)
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * imgsrc (image) - The image to be used as the bleed image
+ * header (string) - The header to be displayed over the image
+ * text (string) - The text to be displayed under the header
+ * height (string) - The height (in CSS format and units) of the image
+ */
 
 export default ({ imgsrc, header, text, height }) => {
   return (

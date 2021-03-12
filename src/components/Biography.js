@@ -1,5 +1,22 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * Biography.js — Shows a picture, name, email, and description of a person
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * name (string) - The person's name to be displayed as a header
+ * email (string) - The person's email, which is displayed and linked
+ * role (string) - A brief description of their role displayed under or next to their name
+ * description (string) - A longer description of what this person does, displayed under their name
+ * image (image) - An image of the person displayed next to their name 
+ */
 
 export default ({ name, email, role, description, image }) => {
   return (

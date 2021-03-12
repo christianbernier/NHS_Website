@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * apply.js — Page with information about how to apply
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-31
+ */
+
 import React from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";

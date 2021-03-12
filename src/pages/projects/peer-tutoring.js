@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * peer-tutoring.js — Page with information about the peer tutoring program
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-09-25
+ */
+
 import React from "react";
 import GlobalCSS from "../../components/GlobalCSS";
 import Header from "../../components/Header";

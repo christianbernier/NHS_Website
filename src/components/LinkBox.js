@@ -1,7 +1,22 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * LinkBox.js — A button for a link, either internal or external
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-31
+ */
+
 import React from "react";
 import {Link} from "gatsby";
 import { css } from "@emotion/core";
 import LinkIcon from "../../assets/link_icon.png";
+
+/*
+ * text (string) - The text to be displayed in the box
+ * type (string) - The type of link (either internal or external) for more efficient linking (<a> for external; <Link> for internal)
+ * link (string) - The URL of the link
+ */
 
 export default ({ text, type, link }) => {
   if (type === "internal") {

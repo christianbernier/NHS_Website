@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * council.js — Page with information about the NHS Council
+ * © 2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2021-01-15
+ */
+
 import React from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";
@@ -32,7 +41,7 @@ export default () => {
         <BodyText
           paragraphs={[
             "The NHS Council is a group of driven, creative, and collaborative NHS students that work with officers to organize and execute large community-building events and projects. These include traditional fundraisers such as the NHS Talent Show, as well as new initiatives such as the NHS Cookbook, Film Festival, and more. The Council also assists student organizations in running NHS events.",
-            "If you have any ideas for events that incorporate NHS and the community or would like to work with the Council for your event, please fill out this form! Meetings are Wednesdays from 4:00-4:30, and members gain NHS hours for participation."
+            "If you have any ideas for events that incorporate NHS and the community or would like to work with the Council for your event, please fill out this form! Meetings are Wednesdays from 4:15-4:45, and members gain NHS hours for participation."
           ]}
         />
         <Gap height="30px"/>

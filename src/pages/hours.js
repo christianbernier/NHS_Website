@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * hours.js — Page with hours information and form to check hours
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-09-08
+ */
+
 import React from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";

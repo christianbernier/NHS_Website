@@ -1,5 +1,19 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * BodyHeader.js — Creates a custom header for sections
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * text (string) - The text of the header
+ * line (boolean) - Whether there should be a line below the header
+ */
 
 export default ({ text, line }) => {
   return (

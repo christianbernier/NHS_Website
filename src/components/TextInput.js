@@ -1,5 +1,18 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * TextInput.js — Input field that accepts text
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-09-08
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * htmlID (string) - The ID of the HTML DOM <input> so it can be referenced elsewhere
+ */
 
 export default ({ htmlID }) => {
   return (

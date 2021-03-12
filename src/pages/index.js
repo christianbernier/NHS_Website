@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * index.js — Homepage for the NHS website
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-20
+ */
+
 import React from "react";
 import GlobalCSS from "../components/GlobalCSS.js";
 import Header from "../components/Header.js";

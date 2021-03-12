@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * Header.js — The header for every page, including the navigation bar
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-20
+ */
+
 import React, { useEffect, useState } from "react";
 import {Link} from "gatsby";
 import { css } from "@emotion/core";
@@ -5,6 +14,8 @@ import Logo from "../../assets/NHS_Logo.png";
 import NavButton from "../components/NavButton.js";
 
 export default () => {
+
+  //An array of the pages and their links for the navigation bar
   const pages = [
     {
       title: "Home",
@@ -32,30 +43,35 @@ export default () => {
     },
   ];
 
+  //For mobile, the navigation bar hides the links until the "Show Navigation" button is pressed
+  //This variable (pagesShown) keeps track of whether that button is pressed or not
   const [pagesShown, setPagesShown] = useState(true);
   let pageText = "Hide navigation";
 
-  if (typeof window !== "undefined" && typeof document !== "undefined") {
+  if (typeof window !== "undefined" && typeof document !== "undefined") { //This is to prevent it from breaking when building without a window
     if (pagesShown) {
-      for (let element of document.getElementsByClassName("nav_button")) {
+      for (let element of document.getElementsByClassName("nav_button")) { //Shows the pages when the "Show Navigation" button is pressed
         element.classList.remove("hidden");
       }
-      pageText = "Hide navigation";
+      pageText = "Hide navigation"; //Resets the text of the button, allowing the user to hide the navigation
     } else {
-      for (let element of document.getElementsByClassName("nav_button")) {
+      for (let element of document.getElementsByClassName("nav_button")) { //Hides the pages when the "Hide Navigation" button is pressed
         element.classList.add("hidden");
       }
-      pageText = "Show navigation";
+      pageText = "Show navigation"; //Resets the text of the button, allowing the user to show the navigation
     }
   }
 
   useEffect(() => {
-    if (typeof window !== "undefined" && typeof document !== "undefined") {
+    if (typeof window !== "undefined" && typeof document !== "undefined") { //This is to prevent it from breaking when building without a window
+      
+      //This sets up variables to calculate whether or not the navigation bar should stick
       const navbar = document.getElementById("nav_bar");
       const ca = document.getElementById("content_area");
       const deviceWidth = navbar.clientWidth;
       const sticky = navbar.offsetTop;
 
+      //This will hide the navigation if the page is loaded on a mobile device
       if (deviceWidth <= 500) {
         setPagesShown(false);
         for (let element of document.getElementsByClassName("nav_button")) {
@@ -64,12 +80,13 @@ export default () => {
         pageText = "Show navigation";
       }
 
+      //This is to make the navigation bar "stick" when the user scrolls
       window.onscroll = () => {
         if (deviceWidth > 500) {
-          if (window.pageYOffset >= sticky) {
+          if (window.pageYOffset >= sticky) { //On computers, the navigation bar will stick when the user scrolls far enough
             navbar.classList.add("sticky");
             ca.classList.add("bump_down");
-          } else {
+          } else { //On mobile, the navigation bar does not stick
             navbar.classList.remove("sticky");
             ca.classList.remove("bump_down");
           }

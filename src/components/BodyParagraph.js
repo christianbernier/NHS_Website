@@ -1,5 +1,18 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * BodyParagraph.js — Creates a stylized <p> with custom text
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-08-25
+ */
+
 import React from "react";
 import { css } from "@emotion/core";
+
+/*
+ * text (string) - The text to be displayed
+ */
 
 export default ({ text }) => {
   return (

@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * CurrentProjects.js — A list of all the current projects, updated from a database
+ * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2020-09-05
+ */
+
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
 import TextWithLinks from "../components/TextWithLinks";

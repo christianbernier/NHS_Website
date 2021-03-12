@@ -1,3 +1,12 @@
+/*
+ * National Honor Society — Lexington High School — Lexington, MA 
+ * 
+ * event.js — Page that fetches event information from a database for the calendar
+ * © 2021 to National Honor Society Lexington, MA Charter
+ * 
+ * Created by Christian Bernier on 2021-02-12
+ */
+
 import React, { useState, useEffect } from "react";
 import GlobalCSS from "../components/GlobalCSS";
 import Header from "../components/Header";
