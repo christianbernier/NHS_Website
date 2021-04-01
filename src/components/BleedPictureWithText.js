@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * BleedPictureWithText.js — Used on most pages under the header as a page title (with an image)
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-08-25
  */

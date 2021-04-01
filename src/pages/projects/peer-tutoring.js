@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * peer-tutoring.js — Page with information about the peer tutoring program
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-09-25
  */

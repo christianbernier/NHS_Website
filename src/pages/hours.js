@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * hours.js — Page with hours information and form to check hours
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-09-08
  */
@@ -53,8 +53,8 @@ export default () => {
         />
         <Gap height="20px"/>
         <PopArea
-          header="Hours Reminder"
-          body="With the school year half over, please make sure you're on-schedule for completing your hours by this spring. If you have any concerns about your hours, please contact any officer ASAP. Thank you!"
+          header="Hours Deadline"
+          body="All community service hours must be logged by Friday, April 30th at 11:59pm to be counted for the 2020-2021 school year. Every NHS member must complete 20 hours by the deadline to retain membership, with juniors needing at least 15 NHS-specific hours (from NHS projects) and seniors needing 10. Other hours may be completed from any community service project."
         />
         <Gap height="20px"/>
         <BodyHeader

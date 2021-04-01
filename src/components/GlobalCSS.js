@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * GlobalCSS.js — HTML tags for the <head> and CSS to be used across the site
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-08-20
  */

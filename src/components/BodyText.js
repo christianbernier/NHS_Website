@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * BodyText.js — Created a series of paragraphs for bodies of text
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-08-25
  */

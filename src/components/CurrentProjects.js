@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * CurrentProjects.js — A list of all the current projects, updated from a database
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-09-05
  */
@@ -33,6 +33,7 @@ export default () => {
             coordinator_email: entry["gsx$coordinatoremail"]["$t"],
           });
         }
+        currentProjects.sort((a, b) => Math.random() - 0.5);
         setProjects(currentProjects);
       });
   }, []);

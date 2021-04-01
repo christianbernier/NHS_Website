@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * index.js — Homepage for the NHS website
- * © 2020-2021 to National Honor Society Lexington, MA Charter
+ * © 2020-2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2020-08-20
  */
@@ -37,12 +37,12 @@ export default () => {
         <BleedPictureWithText
           imgsrc={HeaderImageHome}
           header="Welcome!"
-          text="Thank you for visiting the Lexington, MA charter of the National Honor Society (NHS). On this site, you can find information about current community service projects, how to log your hours, and view your current status in the society."
+          text="Thank you for visiting the Lexington, MA chapter of the National Honor Society (NHS). On this site, you can find information about current community service projects, how to log your hours, and view your current status in the society."
           height="500px"
         />
         <PopArea
-          header="Mid-Year Update"
-          body="This is a friendly reminder to please stay on schedule with your community service hours! There are new projects posted on the website nearly every week, and you are always welcome to submit your own for approval. Thank you for all you have done this year and we hope you're looking forward to semester two in NHS as much as we are!"
+          header="Upcoming Deadline"
+          body="Please ensure you have completed all 20 required community service hours by the deaadline: Friday, April 30th at 11:59pm. All NHS members must have 20 hours, with juniors needing 15 NHS-specific hours (from NHS projects) and seniors 10. All other hours may be completed with any community service projects."
         />
         <Gap height="30px"/>
         <BodyHeader text="Welcome to the National Honor Society" line={true} />
@@ -66,7 +66,7 @@ export default () => {
         <BodyHeader text="Leadership" line={true} />
         <BodyText
           paragraphs={[
-            "The National Honor Society is run by your student officers Kyuho Lee, Indigo Zhu, Callie Rabins, and Christian Bernier. This charter is also overseen by Dr. Parul Kumar.",
+            "The National Honor Society is run by your student officers Kyuho Lee, Indigo Zhu, Callie Rabins, and Christian Bernier. This chapter is also overseen by Dr. Parul Kumar.",
             "Your leaders are responsible for keeping members informed of upcoming deadlines, projects, and events. If you have any questions about NHS, please email any of your officers and we will help.",
             "Please see below for more information on each leader."
           ]}

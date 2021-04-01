@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * council.js — Page with information about the NHS Council
- * © 2021 to National Honor Society Lexington, MA Charter
+ * © 2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2021-01-15
  */

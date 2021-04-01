@@ -2,7 +2,7 @@
  * National Honor Society — Lexington High School — Lexington, MA 
  * 
  * Calendar.js — The calendar, including fetching events
- * © 2021 to National Honor Society Lexington, MA Charter
+ * © 2021 to National Honor Society Lexington, MA Chapter
  * 
  * Created by Christian Bernier on 2021-02-12
  */
