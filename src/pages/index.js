@@ -42,7 +42,7 @@ export default () => {
         />
         <PopArea
           header="Upcoming Deadline"
-          body="Please ensure you have completed all 20 required community service hours by the deaadline: Friday, April 30th at 11:59pm. All NHS members must have 20 hours, with juniors needing 15 NHS-specific hours (from NHS projects) and seniors 10. All other hours may be completed with any community service projects."
+          body="Please ensure you have completed all 20 required community service hours by the deaadline: Tuesday, June 1st at 3:10pm. All NHS members must have 20 hours, with juniors needing 15 NHS-specific hours (from NHS projects) and seniors 10. All other hours may be completed with any community service projects."
         />
         <Gap height="30px"/>
         <BodyHeader text="Welcome to the National Honor Society" line={true} />

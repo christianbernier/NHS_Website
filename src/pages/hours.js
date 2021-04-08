@@ -54,7 +54,7 @@ export default () => {
         <Gap height="20px"/>
         <PopArea
           header="Hours Deadline"
-          body="All community service hours must be logged by Friday, April 30th at 11:59pm to be counted for the 2020-2021 school year. Every NHS member must complete 20 hours by the deadline to retain membership, with juniors needing at least 15 NHS-specific hours (from NHS projects) and seniors needing 10. Other hours may be completed from any community service project."
+          body="All community service hours must be logged by Tuesday, June 1st at 3:10pm to be counted for the 2020-2021 school year. Every NHS member must complete 20 hours by the deadline to retain membership, with juniors needing at least 15 NHS-specific hours (from NHS projects) and seniors needing 10. Other hours may be completed from any community service project."
         />
         <Gap height="20px"/>
         <BodyHeader
