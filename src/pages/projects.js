@@ -70,13 +70,14 @@ export default () => {
         />
         <BodyText
           paragraphs={[
-            "We are offering a college essay peer-editing exchange program for NHS members this year. If you are interested, more details may be found on the form below. If you have any questions, please email Callie Rabins (21rabins@lexingtonma.org)."
+            "The NHS Council is running a prep book exchange for students to donate AP/SAT/ACT prep books! If you would like more information about donating or receiving books, please see the instruction document linked below. If you have any questions, please email Callie Rabins (21rabins@lexingtonma.org)."
           ]}
         />
         <LinkBox
-          text="Sign up for essay exchange"
-          link="https://forms.gle/LaJdYWo6Z4ntuJTX7"
+          text="Prep book exchange instructions"
+          link="https://docs.google.com/document/d/120QONElleWttg4V6HLQqe5mF8nVZMs1XGHxBepj8f04/edit"
         />
+        
         
 
         <Gap height="20px" />

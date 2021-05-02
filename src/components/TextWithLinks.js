@@ -12,9 +12,10 @@ import { css } from "@emotion/core";
 
 /*
  * text (string) - The text to be encoded with links in this format: [link](url)
+ * asParagraph (boolean) - Whether the <p> should be formatted as a paragraph would be
  */
 
-export default ({ text }) => {
+export default ({ text, asParagraph }) => {
 
   const [textSections, setTextSections] = useState([]); //Each section of plain text without links
   const [linkTexts, setLinkTexts] = useState([]); //The text for each link
@@ -65,7 +66,18 @@ export default ({ text }) => {
         font-family: "Inter", sans-serif;
         font-size: 1.2rem;
         font-weight: 400;
-        margin-top: 15px;
+        margin-top: ${(asParagraph) ? "" : "15px"};
+        margin-left: ${(asParagraph) ? "30px" : ""};
+        margin-right: ${(asParagraph) ? "50px" : ""};
+        margin-bottom: ${(asParagraph) ? "30px" : ""};
+
+        @media only screen and (min-width: 1700px) {
+          padding: ${(asParagraph) ? "0 calc((100vw - 1700px) / 2)" : ""}
+        }
+
+        @media only screen and (max-width: 500px) {
+          margin-right: ${(asParagraph) ? "30px" : ""};
+        }
       `}
     >
       {textSections[0]}
