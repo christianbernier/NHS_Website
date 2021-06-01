@@ -1,9 +1,9 @@
 /*
- * National Honor Society — Lexington High School — Lexington, MA 
- * 
+ * National Honor Society — Lexington High School — Lexington, MA
+ *
  * CheckHours.js — A form for users to check their current hours (from a database)
  * © 2020-2021 to National Honor Society Lexington, MA Chapter
- * 
+ *
  * Created by Christian Bernier on 2020-09-08
  */
 
@@ -16,6 +16,7 @@ import Button from "../components/Button";
 export default () => {
   const [hours, setHours] = useState([]);
   const [textToDisplay, setTextToDisplay] = useState("");
+  const [inducted, setInducted] = useState(-1);
 
   useEffect(() => {
     fetch(
@@ -46,6 +47,7 @@ export default () => {
       const firstName = document.getElementById("first_name").value;
       const lastName = document.getElementById("last_name").value;
       const yog = document.getElementById("yog").value;
+      setInducted(-1);
 
       if (firstName === "" || lastName === "" || yog === "") {
         setTextToDisplay("Please make sure every field is filled out.");
@@ -58,6 +60,13 @@ export default () => {
             hour.yog === yog
           ) {
             found = true;
+            if(yog === "2022"){
+              if(hour.totalHoursCounted >= 20){
+                setInducted(1);
+              } else{
+                setInducted(0);
+              }
+            }
             setTextToDisplay(
               `${hour.firstName} ${hour.lastName} has completed ${
                 hour.NHSHours
@@ -74,8 +83,10 @@ export default () => {
           }
         }
 
-        if(!found){
-          setTextToDisplay("Couldn't find your record in the spreadsheet. Please try again or email an NHS officer.")
+        if (!found) {
+          setTextToDisplay(
+            "Couldn't find your record in the spreadsheet. Please try again or email an NHS officer."
+          );
         }
       }
     }
@@ -159,6 +170,45 @@ export default () => {
             grid-area: info;
           `}
         >
+          {inducted === 0 ? (
+            <p
+              css={css`
+                font-size: 1.4rem;
+                color: var(--red);
+                font-family: "Inter", sans-serif;
+                font-weight: 600;
+                margin-top: 25px;
+                margin-bottom: 10px;
+              `}
+            >
+              Due to not reaching the 20 hour requirement, you have
+              unfortunately not been inducted into the National Honor Society.
+              If you believe this is an error, contact an NHS officer as soon as
+              possible.
+            </p>
+          ) : (
+            <>
+              {inducted === 1 ? (
+                <p
+                  css={css`
+                    font-size: 1.4rem;
+                    color: var(--green);
+                    font-family: "Inter", sans-serif;
+                    font-weight: 600;
+                    margin-top: 25px;
+                    margin-bottom: 10px;
+                  `}
+                >
+                  Congratulations! You have completed the 20 hour community
+                  service requirement, and are therefore inducted into the
+                  National Honor Society. Welcome!
+                </p>
+              ) : (
+                <></>
+              )}
+            </>
+          )}
+
           <p
             css={css`
               font-size: 1.4rem;

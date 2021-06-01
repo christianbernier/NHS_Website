@@ -3,3 +3,5 @@ node_modules
 public
 admin
 .cache
+/src/cms
+/src/pages/cms_test.js

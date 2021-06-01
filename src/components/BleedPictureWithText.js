@@ -18,6 +18,7 @@ import { css } from "@emotion/core";
  */
 
 export default ({ imgsrc, header, text, height }) => {
+  
   return (
     <div
       css={css`

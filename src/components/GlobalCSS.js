@@ -59,6 +59,8 @@ export default () => {
             --dark-gray: #c8c8c8;
             --light-blue: #007ea7;
             --dark-blue: #003459;
+            --red: #fd2626;
+            --green: #359633;
             overflow-x: hidden;
           }
 
