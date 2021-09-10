@@ -19,7 +19,7 @@ export default () => {
   const pages = [
     {
       title: "Home",
-      link: "/",
+      link: "/old",
     },
     {
       title: "About",
@@ -94,7 +94,7 @@ export default () => {
   return (
     <>
       <Link
-        to="/"
+        to="/old"
         css={css`
           text-decoration: none;
         `}

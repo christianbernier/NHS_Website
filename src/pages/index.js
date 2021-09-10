@@ -8,106 +8,128 @@
  */
 
 import React from "react";
+import {Link} from "gatsby";
+import { css } from "@emotion/core";
+import Logo from "../../assets/NHS_Logo.png";
 import GlobalCSS from "../components/GlobalCSS.js";
-import Header from "../components/Header.js";
-import BleedPictureWithText from "../components/BleedPictureWithText.js";
-import PopArea from "../components/PopArea.js";
+import { Helmet } from "react-helmet-async";
 import BodyHeader from "../components/BodyHeader.js";
 import BodyText from "../components/BodyText.js";
-import Biography from "../components/Biography.js";
-import Gap from "../components/Gap.js";
-import Footer from "../components/Footer.js";
-import LinkBox from "../components/LinkBox.js";
-
-import HeaderImageHome from "../../assets/headers/home.jpg";
-// import DefaultProfilePicture from "../../assets/profiles/Default.png";
-
-import KumarProfilePicture from "../../assets/profiles/Kumar.jpg";
-import KyuhoProfilePicture from "../../assets/profiles/Kyuho.jpeg";
-import IndigoProfilePicture from "../../assets/profiles/Indigo.jpg";
-import CallieProfilePicture from "../../assets/profiles/Callie.jpg";
-import ChristianProfilePicture from "../../assets/profiles/Christian.jpg";
+import LinkBox from "../components/LinkBox";
 
 export default () => {
   return (
     <>
       <GlobalCSS />
-      <Header />
+      <Helmet>
+        <title>Redirect | NHS</title>
+        <meta property="og:title" content="404 | NHS" />
+      </Helmet>
+      <Link
+        to="/"
+        css={css`
+          text-decoration: none;
+        `}
+      >
+        <div
+          css={css`
+            width: 100vw;
+            height: 120px;
+            background-color: var(--dark-blue);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+            @media only screen and (max-width: 500px) {
+              flex-direction: column-reverse;
+              justify-content: center;
+              align-items: center;
+              height: 200px;
+            }
+          `}
+        >
+          <div
+            css={css`
+              display: flex;
+              flex-direction: column;
+              justify-content: space-evenly;
+              padding-left: 30px;
+              height: 100%;
+
+              @media only screen and (max-width: 500px) {
+                justify-content: center;
+                align-items: center;
+                padding-left: 0;
+                margin-left: 30px;
+                margin-right: 30px;
+                text-align: center;
+              }
+            `}
+          >
+            <p
+              css={css`
+                font-family: "Playfair Display", serif;
+                font-size: 2rem;
+                margin: 0;
+                color: var(--light);
+                font-weight: 700;
+
+                @media only screen and (max-width: 500px) {
+                  font-size: 1.6rem;
+                }
+              `}
+            >
+              National Honor Society
+            </p>
+            <p
+              css={css`
+                font-family: "Playfair Display SC", serif;
+                font-size: 1rem;
+                margin: 0;
+                color: var(--light);
+                font-weight: 700;
+                margin-top: -20px;
+
+                @media only screen and (max-width: 500px) {
+                  margin-top: 8px;
+                  margin-bottom: 30px;
+                }
+              `}
+            >
+              Lexington, MA
+            </p>
+          </div>
+          <img
+            src={Logo}
+            css={css`
+              height: 80px;
+              margin-right: 30px;
+
+              @media only screen and (max-width: 500px) {
+                margin-right: 0;
+                margin-top: 30px;
+              }
+            `}
+            alt="National Honor Society logo"
+          />
+        </div>
+      </Link>
       <div id="content_area">
-        <BleedPictureWithText
-          imgsrc={HeaderImageHome}
-          header="Welcome!"
-          text="Thank you for visiting the Lexington, MA chapter of the National Honor Society (NHS). On this site, you can find information about current community service projects, how to log your hours, and view your current status in the society."
-          height="500px"
+        <BodyHeader
+          text="Head over to the new NHS website!"
+          line={true}
         />
-        <PopArea
-          header="Upcoming Deadline"
-          body="Please ensure you have completed all 20 required community service hours by the deaadline: Tuesday, June 1st at 3:10pm. All NHS members must have 20 hours, with juniors needing 15 NHS-specific hours (from NHS projects) and seniors 10. All other hours may be completed with any community service projects."
-        />
-        <Gap height="30px"/>
-        <BodyHeader text="Welcome to the National Honor Society" line={true} />
         <BodyText
           paragraphs={[
-            "Hello and welcome to NHS! We are a group of highly-motivated students making Lexington High School and our greater community a better place; throughout the year, we collectively complete thousands of hours of community service."
-          ]}
-        />
-        <Gap height="20px"/>
-        <BodyHeader text="NHS Council" line={true} />
-        <BodyText
-          paragraphs={[
-            "In January 2021, the National Honor Society created the NHS Council: a group of NHS students working together to plan events and better run the club. Please click below to learn more about the council and its initiatives."
+            "Hello! Thank you for visiting the NHS website. This edition of the website was for the 2020–2021 school year only. Please click the link below to be taken to the new site.",
+            "We apologize for any inconvenience this may cause. Please contact Sam Offsey (22offsey@lexingtonma.org) with any questions."
           ]}
         />
         <LinkBox
-          text="Learn about the NHS Council"
-          type="internal"
-          link="../council"
+          text="New NHS Website"
+          link="https://lexnhs.cloudaccess.host/"
         />
-        <BodyHeader text="Leadership" line={true} />
-        <BodyText
-          paragraphs={[
-            "The National Honor Society is run by your student officers Kyuho Lee, Indigo Zhu, Callie Rabins, and Christian Bernier. This chapter is also overseen by Dr. Parul Kumar.",
-            "Your leaders are responsible for keeping members informed of upcoming deadlines, projects, and events. If you have any questions about NHS, please email any of your officers and we will help.",
-            "Please see below for more information on each leader."
-          ]}
-        />
-        <Biography
-          name="Dr. Parul Kumar"
-          email="pkumar@lexingtonma.org"
-          role="Advisor"
-          image={KumarProfilePicture}
-          description="Hello everyone, I am Parul Kumar and I teach AP Chemistry. I have been the advisor for the National Honor Society since 2003. I live with my husband, and I have two grown children. My hobbies include traveling, painting, acting, and cooking! I am here to help all of you seek and participate in community service activities and build character. I am honored and excited to work with all of you. I am looking forward to having a great year together!"
-        />
-        <Biography
-          name="Kyuho Lee"
-          email="21lee72@lexingtonma.org"
-          role="President"
-          image={KyuhoProfilePicture}
-          description="Hey! I'm Kyuho and I'm the President of NHS. At NHS, I’m in charge of organizing and managing overall activities, such as events, meetings, and projects. Outside of NHS, I love to sing, play frisbee, and go to the beach. If you have any NHS-related questions, please reach out!"
-        />
-        <Biography
-          name="Indigo Zhu"
-          email="21zhu15@lexingtonma.org"
-          role="Vice President, Community Service"
-          image={IndigoProfilePicture}
-          description="I cannot wait to be a part of the NHS officer team this year! I strive to use my role to find and create projects that are not only engaging but also proactively benefit others, and am always open to accepting new project ideas! This year, COVID-19 will definitely be a challenge to keep in mind when designing the events, but we will make an effort to to not let physical distancing get in the way of being  connected. Aside from NHS, I enjoy painting, playing with my dog, and finding new restaurants to try out (always looking for recommendations)!"
-        />
-        <Biography
-          name="Callie Rabins"
-          email="21rabins@lexingtonma.org"
-          role="Vice President, Fundraising and Publicity"
-          image={CallieProfilePicture}
-          description="Hi fellow NHS members! My name is Callie and I am your Vice President of Fundraising and Publicity. It is my job to make sure that we have all of the funding we need secured, and that our awesome events are well publicized and attended. Please do not hesitate to contact me via email if you have any questions about my role or anything else NHS related :). Outside of the classroom I am involved with Bee Club and dance (I am definitely hoping to see some dancers at our talent show this year!)"
-        />
-        <Biography
-          name="Christian Bernier"
-          email="21bernier3@lexingtonma.org"
-          role="Vice President, Web Administration"
-          image={ChristianProfilePicture}
-          description="Hi! My name is Christian and I'm the Vice President of Web Administration. At NHS, I work to keep the website up and running and make improvements periodically. I also do some of the behind-the-scenes stuff like managing which projects are displayed on the website, tracking hours, and other tasks. Additionally, I work with the other officers and Dr. Kumar on planning events and making sure there are no issues. Outside of school, I enjoy programming and playing with my two cats, Buttons and Mittens. If you ever have any questions or see any issues with the website, feel free to send me an email!"
-        />
-        <Gap height="50px"/>
-        <Footer/>
       </div>
     </>
   );
